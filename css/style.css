@@ -1,0 +1,59 @@
+/* *********** Custom properties  *********** */
+/* ****************************************** */
+:root {
+  --first-color: #fff;
+  --second-color: #d03b40;
+  --third-color: #ded6c0;
+  --gray-light-color: #f3f3f3;
+  --font: "Lato", sans-serif;
+  --max-width: 1200px;
+  --header-height: 3rem;
+}
+
+/* ***************** RESET ******************* */
+/* ****************************************** */
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+a:hover {
+  opacity: 0.75;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* ********** Components **********/
+/* *******************************/
+
+/* ****************Utilities *****************/
+/* **************************************** */
+
+/* ************ ***Site Styles ************ */
+/* ****************** ******************** */
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  padding: 1rem;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--second-color);
+}
